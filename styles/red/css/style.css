@@ -180,7 +180,7 @@ a.block_link, a.block_link:hover {
   text-decoration: none !important;
 }
 a.block_link:hover {
-  background-color: #f5f7f8;
+  background-color: var(--gray-light);
 }
 .sections {
   padding: 11px 0;
