@@ -1,6 +1,7 @@
 module.exports = {
   // Background
   "$background: #fff": "var(--gray-dark)", // main bg
+  "$background: #f5f7f8": "var(--gray-light)", // block link hover
   "$background: #f5f5f5": "var(--gray-light)", // code block
   "$background: #f9f2f4": "var(--gray-light)", // code
   "$background: rgba(242, 246, 250, 255)": "var(--gray-light)", // selected message
