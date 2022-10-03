@@ -1,8 +1,12 @@
 ## Usage
 
-1. Go to [styles folder](./styles/);
-1. Copy contents of one of the folders to your `ChatExport` folder;
-1. Confirm overwriting the original `styles.css` file.
+1. Download one of themes
+    - [Aqua](https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/aqua)
+    - [Cream](https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/cream)
+    - [Green](https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/green)
+    - [Red](https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/red)
+1. Extract archive contents to your `ChatExport` folder
+1. Confirm overwriting the original `styles.css` file
 
 ## Development
 
