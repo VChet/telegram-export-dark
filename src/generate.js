@@ -1,11 +1,16 @@
 #!/usr/bin/env node
 "use strict";
 
-const remapCss = require("remap-css");
-const { join, parse } = require("path");
-const { readdir, readFile, outputFile } = require("fs-extra");
+import remapCss from "remap-css";
+import fs from "fs-extra";
+import { join, parse } from "path";
+import { fileURLToPath } from 'url'
 
-const mappings = require("./mappings")
+import mappings from "./mappings.js";
+
+const { readFile, readdir, outputFile } = fs
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const sourceFile = join(__dirname, "style_original.css");
 const themesFolder = join(__dirname, "themes");
 const outputFolder = join(__dirname, "..", "styles");

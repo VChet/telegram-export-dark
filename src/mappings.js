@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   // Background
   "$background: #fff": "var(--gray-dark)", // main bg
   "$background: #f5f7f8": "var(--gray-light)", // block link hover
