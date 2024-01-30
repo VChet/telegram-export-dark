@@ -111,6 +111,11 @@ pre {
   border-radius: 50%;
   overflow: hidden;
 }
+.story {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+}
 .userpic .initials {
   display: block;
   color: #fff;
@@ -193,6 +198,10 @@ a.block_link {
 a.block_link:hover {
   text-decoration: none !important;
   background-color: #f5f7f8;
+}
+a.expanded {
+  padding: 2px 8px;
+  margin: -2px -8px;
 }
 .sections {
   padding: 11px 0;
@@ -428,6 +437,9 @@ div.toast_shown {
 .section.sessions {
   background-image: url(../images/section_sessions.png);
 }
+.section.stories {
+  background-image: url(../images/section_stories.png);
+}
 .section.web {
   background-image: url(../images/section_web.png);
 }
@@ -471,65 +483,68 @@ div.toast_shown {
 }
 
 @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-.section.calls {
-  background-image: url(../images/section_calls@2x.png);
-}
-.section.chats {
-  background-image: url(../images/section_chats@2x.png);
-}
-.section.contacts {
-  background-image: url(../images/section_contacts@2x.png);
-}
-.section.frequent {
-  background-image: url(../images/section_frequent@2x.png);
-}
-.section.photos {
-  background-image: url(../images/section_photos@2x.png);
-}
-.section.sessions {
-  background-image: url(../images/section_sessions@2x.png);
-}
-.section.web {
-  background-image: url(../images/section_web@2x.png);
-}
-.section.other {
-  background-image: url(../images/section_other@2x.png);
-}
-.page_header a.content {
-  background-image: url(../images/back@2x.png);
-}
-.media_call .fill {
-  background-image: url(../images/media_call@2x.png)
-}
-.media_contact .fill {
-  background-image: url(../images/media_contact@2x.png)
-}
-.media_file .fill {
-  background-image: url(../images/media_file@2x.png)
-}
-.media_game .fill {
-  background-image: url(../images/media_game@2x.png)
-}
-.media_live_location .fill,
-.media_location .fill,
-.media_venue .fill {
-  background-image: url(../images/media_location@2x.png)
-}
-.media_audio_file .fill {
-  background-image: url(../images/media_music@2x.png)
-}
-.media_invoice .fill {
-  background-image: url(../images/media_shop@2x.png)
-}
-.media_voice_message .fill {
-  background-image: url(../images/media_voice@2x.png)
-}
-.media_photo .fill {
-  background-image: url(../images/media_photo@2x.png)
-}
-.media_video .fill {
-  background-image: url(../images/media_video@2x.png)
-}
+  .section.calls {
+    background-image: url(../images/section_calls@2x.png);
+  }
+  .section.chats {
+    background-image: url(../images/section_chats@2x.png);
+  }
+  .section.contacts {
+    background-image: url(../images/section_contacts@2x.png);
+  }
+  .section.frequent {
+    background-image: url(../images/section_frequent@2x.png);
+  }
+  .section.photos {
+    background-image: url(../images/section_photos@2x.png);
+  }
+  .section.sessions {
+    background-image: url(../images/section_sessions@2x.png);
+  }
+  .section.stories {
+    background-image: url(../images/section_stories@2x.png);
+  }
+  .section.web {
+    background-image: url(../images/section_web@2x.png);
+  }
+  .section.other {
+    background-image: url(../images/section_other@2x.png);
+  }
+  .page_header a.content {
+    background-image: url(../images/back@2x.png);
+  }
+  .media_call .fill {
+    background-image: url(../images/media_call@2x.png)
+  }
+  .media_contact .fill {
+    background-image: url(../images/media_contact@2x.png)
+  }
+  .media_file .fill {
+    background-image: url(../images/media_file@2x.png)
+  }
+  .media_game .fill {
+    background-image: url(../images/media_game@2x.png)
+  }
+  .media_live_location .fill,
+  .media_location .fill,
+  .media_venue .fill {
+    background-image: url(../images/media_location@2x.png)
+  }
+  .media_audio_file .fill {
+    background-image: url(../images/media_music@2x.png)
+  }
+  .media_invoice .fill {
+    background-image: url(../images/media_shop@2x.png)
+  }
+  .media_voice_message .fill {
+    background-image: url(../images/media_voice@2x.png)
+  }
+  .media_photo .fill {
+    background-image: url(../images/media_photo@2x.png)
+  }
+  .media_video .fill {
+    background-image: url(../images/media_video@2x.png)
+  }
 }
 
 .spoiler {
