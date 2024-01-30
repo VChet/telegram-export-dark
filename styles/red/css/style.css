@@ -1,12 +1,13 @@
+/* Red */
 :root {
-  --main-dark: #b35843;
-  --main: #ff7b5d;
-  --main-light: #ff926d;
-  --gray-dark: #262a2e;
-  --gray: #2b3034;
-  --gray-light: #2f353a;
-  --text: #aaa;
-  --light: #ccc;
+  --main-dark: #B35843;
+  --main: #FF7B5D;
+  --main-light: #FF926D;
+  --gray-dark: #262A2E;
+  --gray: #2B3034;
+  --gray-light: #2F353A;
+  --text: #AAAAAA;
+  --light: #CCCCCC;
 }
 body {
   margin: 0;

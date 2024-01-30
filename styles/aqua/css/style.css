@@ -1,12 +1,13 @@
+/* Aqua */
 :root {
-  --main-dark: #5b8e90;
-  --main: #77babc;
-  --main-light: #8ed1cc;
-  --gray-dark: #1d1d24;
-  --gray: #23232d;
-  --gray-light: #2c2c36;
-  --text: #aaa;
-  --light: #ccc;
+  --main-dark: #5B8E90;
+  --main: #77BABC;
+  --main-light: #8ED1CC;
+  --gray-dark: #1D1D24;
+  --gray: #23232D;
+  --gray-light: #2C2C36;
+  --text: #AAAAAA;
+  --light: #CCCCCC;
 }
 body {
   margin: 0;

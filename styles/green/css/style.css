@@ -1,12 +1,13 @@
+/* Green */
 :root {
-  --main-dark: #4b8b60;
-  --main: #63b97f;
-  --main-light: #7ad08f;
-  --gray-dark: #19191a;
+  --main-dark: #4B8B60;
+  --main: #63B97F;
+  --main-light: #7AD08F;
+  --gray-dark: #19191A;
   --gray: #212122;
-  --gray-light: #2a2a2c;
-  --text: #aaa;
-  --light: #ccc;
+  --gray-light: #2A2A2C;
+  --text: #AAAAAA;
+  --light: #CCCCCC;
 }
 body {
   margin: 0;
