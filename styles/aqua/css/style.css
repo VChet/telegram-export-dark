@@ -114,9 +114,14 @@ pre {
   text-decoration: none;
 }
 .userpic {
-  display: block;
   border-radius: 50%;
+}
+.story, .userpic {
+  display: block;
   overflow: hidden;
+}
+.story {
+  border-radius: 4px;
 }
 .userpic .initials {
   display: block;
@@ -181,6 +186,10 @@ a.block_link, a.block_link:hover {
 }
 a.block_link:hover {
   background-color: var(--gray-light);
+}
+a.expanded {
+  padding: 2px 8px;
+  margin: -2px -8px;
 }
 .sections {
   padding: 11px 0;
@@ -401,6 +410,9 @@ div.toast_shown {
 .section.sessions {
   background-image: url(../images/section_sessions.png);
 }
+.section.stories {
+  background-image: url(../images/section_stories.png);
+}
 .section.web {
   background-image: url(../images/section_web.png);
 }
@@ -461,6 +473,9 @@ only screen and (min-device-pixel-ratio: 2) {
   }
   .section.sessions {
     background-image: url(../images/section_sessions@2x.png);
+  }
+  .section.stories {
+    background-image: url(../images/section_stories@2x.png);
   }
   .section.web {
     background-image: url(../images/section_web@2x.png);
