@@ -14,4 +14,4 @@
 1. Install all dependencies using `npm install`
 1. Add new theme or edit existing ones in the [themes folder](./src/themes/)
 1. Add or update [mappings](./src/mappings.js) to replace any other colors
-1. Regenerate styles with `npm run generate`
+1. Regenerate styles with `npm run build`

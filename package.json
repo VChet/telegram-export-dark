@@ -4,14 +4,14 @@
   "description": "Dark theme generator for Telegram exported chat history",
   "author": "VChet",
   "license": "MIT",
-  "type":"module",
+  "type": "module",
   "homepage": "https://github.com/VChet/telegram-export-dark#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VChet/telegram-export-dark.git"
   },
   "scripts": {
-    "generate": "node ./src/generate.js"
+    "build": "node ./src/generate.js"
   },
   "devDependencies": {
     "fs-extra": "^11.1.0",
