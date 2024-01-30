@@ -13,7 +13,8 @@
   "scripts": {
     "build": "node ./src/generate.js"
   },
-  "devDependencies": {
+  "dependencies": {
+    "fetch-css": "^4.1.1",
     "remap-css": "^7.0.3"
   }
 }

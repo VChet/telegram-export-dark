@@ -2,11 +2,13 @@ import { readFile, readdir, writeFile, mkdir } from "node:fs/promises";
 import { dirname, join, parse } from "node:path";
 import { fileURLToPath } from 'node:url';
 import remapCss from "remap-css";
+import fetchCss from "fetch-css";
 
 import mappings from "./mappings.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const sourceFile = join(__dirname, "style_original.css");
+// https://github.com/telegramdesktop/tdesktop/blob/master/Telegram/Resources/export_html/css/style.css
+const sourceFile = "https://raw.githubusercontent.com/telegramdesktop/tdesktop/master/Telegram/Resources/export_html/css/style.css";
 const themesFolder = join(__dirname, "themes");
 const outputFolder = join(__dirname, "..", "styles");
 
@@ -16,12 +18,12 @@ const exit = (err) => {
 };
 
 async function main() {
-  const initialCss = await readFile(sourceFile, "utf8");
+  const initialCss = await fetchCss([{ url: sourceFile }]);
   const themes = await readdir(themesFolder);
   await Promise.all(themes.map(async (file) => {
     const themeColors = await readFile(join(themesFolder, file), "utf8");
-    const sourceCss = themeColors + initialCss;
-    const output = await remapCss([{ css: sourceCss }], mappings, { validate: true, keep: true });
+    const generatedCss = await remapCss(initialCss, mappings, { validate: true, keep: true });
+    const output = themeColors + generatedCss
     const name = parse(file).name;
     const outputPath = join(outputFolder, name, 'css', 'style.css');
 
