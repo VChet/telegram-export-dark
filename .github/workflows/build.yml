@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "src/styles/**/*.css"
+      - "src/generate.js"
   pull_request:
 
 jobs:
