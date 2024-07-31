@@ -14,5 +14,5 @@ export default {
   "color: #c7254e": "color: var(--main)", // code
   // Borders
   "$border: #e3e6e8": "var(--gray-light)", // divider
-  "$border: #eee": "var(--gray-light)", // code
+  "$border: #eee": "var(--gray-light)" // code
 };

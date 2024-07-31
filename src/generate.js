@@ -1,6 +1,6 @@
 import { readFile, readdir, writeFile, mkdir } from "node:fs/promises";
 import { dirname, join, parse } from "node:path";
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath } from "node:url";
 import remapCss from "remap-css";
 import fetchCss from "fetch-css";
 
@@ -20,14 +20,14 @@ const exit = (err) => {
 async function main() {
   const initialCss = await fetchCss([{ url: sourceFile }]);
   const themes = await readdir(themesFolder);
-  await Promise.all(themes.map(async (file) => {
+  await Promise.all(themes.map(async(file) => {
     const themeColors = await readFile(join(themesFolder, file), "utf8");
     const generatedCss = await remapCss(initialCss, mappings, { validate: true, keep: true });
-    const output = themeColors + generatedCss
+    const output = themeColors + generatedCss;
     const name = parse(file).name;
-    const outputPath = join(outputFolder, name, 'css', 'style.css');
+    const outputPath = join(outputFolder, name, "css", "style.css");
 
-    await mkdir(join(outputFolder, name, 'css'), { recursive: true });
+    await mkdir(join(outputFolder, name, "css"), { recursive: true });
     await writeFile(outputPath, output);
   }));
 }

@@ -14,10 +14,14 @@
     "url": "https://github.com/VChet/telegram-export-dark/issues"
   },
   "scripts": {
-    "build": "node ./src/generate.js"
+    "lint:js": "eslint .",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "build": "node src/generate.js"
   },
   "dependencies": {
+    "eslint": "^9.8.0",
     "fetch-css": "^4.1.2",
+    "neostandard": "^0.11.1",
     "remap-css": "^7.0.5"
   }
 }
