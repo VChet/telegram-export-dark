@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - "src/generate.js"
+      - "src/mappings.js"
   pull_request:
 
 jobs:
@@ -17,4 +18,5 @@ jobs:
         with:
           node-version: "20"
       - run: npm ci
+      - run: npm run lint:js
       - run: npm run build
