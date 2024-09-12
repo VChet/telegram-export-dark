@@ -11,7 +11,7 @@
 ## Development
 
 1. Install [Node.js](https://nodejs.org/)
-1. 1. Install [pnpm](https://pnpm.io/) `npm install pnpm --global`
+1. Install [pnpm](https://pnpm.io/) `npm install pnpm --global`
 1. Install all dependencies using `pnpm install`
 1. Add new theme or edit existing ones in the [themes folder](./src/themes/)
 1. Add or update [mappings](./src/mappings.js) to replace any other colors
