@@ -530,3 +530,25 @@ only screen and (min-device-pixel-ratio: 2) {
   opacity: 0;
   user-select: none;
 }
+.bot_buttons_table {
+  border-spacing: 0 2px;
+  width: 100%;
+}
+.bot_button {
+  border-radius: 8px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #168acd40;
+}
+.bot_button_row {
+  display: table;
+  table-layout: fixed;
+  padding: 0;
+  width: 100%;
+}
+.bot_button_row div {
+  display: table-cell;
+}
+.bot_button_column_separator {
+  width: 2px;
+}
