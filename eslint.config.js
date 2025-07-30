@@ -1,12 +1,14 @@
 import neostandard from "neostandard";
 
 export default [
-  ...neostandard(),
+  ...neostandard({
+    noJsx: true,
+    semi: true
+  }),
   {
     rules: {
       "@stylistic/comma-dangle": ["error", "never"],
       "@stylistic/quotes": ["error", "double"],
-      "@stylistic/semi": ["error", "always"],
       "@stylistic/space-before-function-paren": ["error", "never"]
     }
   }
