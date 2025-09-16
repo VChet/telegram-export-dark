@@ -1,5 +1,8 @@
 # Telegram Export Dark
 
+[![version][version-img]][version-href]
+![prs-welcome][prs-welcome-img]
+
 ## Usage
 
 1. Download one of themes
@@ -19,6 +22,10 @@
 1. Add or update [mappings](./src/mappings.js) to replace any other colors
 1. Regenerate styles with `pnpm run build`
 
+<!-- Badges -->
+[version-img]: https://img.shields.io/github/tag/VChet/telegram-export-dark?label=version&style=flat-square
+[version-href]: https://github.com/VChet/telegram-export-dark/tags
+[prs-welcome-img]: https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square
 <!-- Links -->
 [aqua-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/aqua
 [cream-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/cream
