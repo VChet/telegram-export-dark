@@ -4,6 +4,8 @@ export default {
   "$background: #f5f7f8": "var(--gray-light)", // block link hover
   "$background: #f5f5f5": "var(--gray-light)", // code block
   "$background: #f9f2f4": "var(--gray-light)", // code
+  "$background: #40a6e2": "var(--main)", // reaction default
+  "$background: #e8f5fc": "var(--main-dark)", // reaction active
   "$background: rgba(242, 246, 250, 255)": "var(--gray-light)", // selected message
   // Color
   "color: #000": "color: var(--text)", // main text
