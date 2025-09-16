@@ -552,3 +552,45 @@ only screen and (min-device-pixel-ratio: 2) {
 .bot_button_column_separator {
   width: 2px;
 }
+.reactions {
+  margin: 5px 0;
+}
+.reactions .reaction {
+  display: inline-flex;
+  height: 20px;
+  border-radius: 15px;
+  background-color: var(--main-dark);
+  color: var(--main);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.reactions .reaction.active {
+  background-color: var(--main);
+  color: #fff;
+}
+.reactions .reaction.paid {
+  background-color: #fdf6e1;
+  color: #c58523;
+}
+.reactions .reaction.active.paid {
+  background-color: #ecae0a;
+  color: #fdf6e1;
+}
+.reactions .reaction .emoji {
+  line-height: 20px;
+  margin: 0 5px;
+  font-size: 15px;
+}
+.reactions .reaction .userpic:not(:first-child) {
+  margin-left: -8px;
+}
+.reactions .reaction .userpic {
+  display: inline-block;
+}
+.reactions .reaction .userpic .initials {
+  font-size: 8px;
+}
+.reactions .reaction .count {
+  margin-right: 8px;
+  line-height: 20px;
+}
