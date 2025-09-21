@@ -1,11 +1,11 @@
-/* Green */
+/* Rose */
 :root {
-  --main-dark: #4B8B60;
-  --main: #63B97F;
-  --main-light: #7AD08F;
-  --gray-dark: #19191A;
-  --gray: #212122;
-  --gray-light: #2A2A2C;
+  --main-dark: #A95244;
+  --main: #FF7B5D;
+  --main-light: #FF926D;
+  --gray-dark: #1F1A18;
+  --gray: #26211E;
+  --gray-light: #2B2623;
   --text: #AAAAAA;
   --light: #CCCCCC;
 }

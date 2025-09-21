@@ -8,8 +8,8 @@
 1. Download one of themes
     - [Aqua][aqua-href]
     - [Cream][cream-href]
-    - [Green][green-href]
-    - [Red][red-href]
+    - [Mint][mint-href]
+    - [Rose][rose-href]
 1. Extract archive contents to your `ChatExport` folder
 1. Confirm overwriting the original `styles.css` file
 
@@ -29,5 +29,5 @@
 <!-- Links -->
 [aqua-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/aqua
 [cream-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/cream
-[green-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/green
-[red-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/red
+[mint-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/mint
+[rose-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/rose

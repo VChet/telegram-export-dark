@@ -1,11 +1,11 @@
-/* Red */
+/* Mint */
 :root {
-  --main-dark: #B35843;
-  --main: #FF7B5D;
-  --main-light: #FF926D;
-  --gray-dark: #262A2E;
-  --gray: #2B3034;
-  --gray-light: #2F353A;
+  --main-dark: #4B8B60;
+  --main: #63B97F;
+  --main-light: #7AD08F;
+  --gray-dark: #1B1B1C;
+  --gray: #212121;
+  --gray-light: #2A2A2A;
   --text: #AAAAAA;
   --light: #CCCCCC;
 }

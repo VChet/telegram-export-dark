@@ -12,11 +12,6 @@ const sourceFile = "https://github.com/telegramdesktop/tdesktop/raw/master/Teleg
 const themesFolder = join(__dirname, "themes");
 const outputFolder = join(__dirname, "..", "styles");
 
-const exit = (err) => {
-  if (err) console.error(err);
-  process.exit(err ? 1 : 0);
-};
-
 async function main() {
   const initialCss = await fetchCss([{ url: sourceFile }]);
   const themes = await readdir(themesFolder);
@@ -32,4 +27,9 @@ async function main() {
   }));
 }
 
-main().then(exit).catch(exit);
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
