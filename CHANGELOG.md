@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.0](https://github.com/VChet/telegram-export-dark/compare/v0.3.2...v0.4.0) (2025-09-21)
+
+
+### Features
+
+* update theme names and colors ([2696e9d](https://github.com/VChet/telegram-export-dark/commit/2696e9d058488fcc985caa0c94e3ffb84b8fa140))
+
 ## [0.3.3](https://github.com/VChet/telegram-export-dark/compare/v0.3.2...v0.3.3) (2025-09-21)
 
 No significant changes
