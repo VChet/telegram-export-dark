@@ -20,7 +20,7 @@
     "release": "commit-and-tag-version"
   },
   "dependencies": {
-    "eslint": "^9.36.0",
+    "eslint": "^9.39.1",
     "fetch-css": "^4.1.2",
     "neostandard": "^0.12.2",
     "remap-css": "^7.0.5"
@@ -39,6 +39,7 @@
       "es-set-tostringtag": "npm:@nolyfill/es-set-tostringtag@^1",
       "hasown": "npm:@nolyfill/hasown@^1",
       "is-core-module": "npm:@nolyfill/is-core-module@^1",
+      "isarray": "npm:@nolyfill/isarray@^1",
       "object.assign": "npm:@nolyfill/object.assign@^1",
       "object.entries": "npm:@nolyfill/object.entries@^1",
       "object.fromentries": "npm:@nolyfill/object.fromentries@^1",
