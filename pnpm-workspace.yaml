@@ -1,0 +1,7 @@
+minimumReleaseAge: 0
+shellEmulator: true
+trustPolicy: no-downgrade
+packages: [.]
+overrides:
+  safe-buffer: "npm:@nolyfill/safe-buffer@^1"
+  string.prototype.repeat: "npm:@nolyfill/string.prototype.repeat@^1"
