@@ -3,6 +3,10 @@
 [![version][version-img]][version-href]
 ![prs-welcome][prs-welcome-img]
 
+## Color themes
+
+Based on [Telegram Vanilla Dark Desktop][main-url]. See the main repository for previews.
+
 ## Usage
 
 1. Download one of themes
@@ -31,3 +35,5 @@
 [cream-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/cream
 [mint-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/mint
 [rose-href]: https://download-directory.github.io/?url=https://github.com/VChet/telegram-export-dark/tree/master/styles/rose
+<!-- Links -->
+[main-url]: https://github.com/VChet/telegram-vanilla-dark-desktop
