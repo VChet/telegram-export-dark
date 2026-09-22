@@ -7,8 +7,8 @@ import fetchCss from "fetch-css";
 import mappings from "./mappings.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-// https://github.com/telegramdesktop/tdesktop/blob/master/Telegram/Resources/export_html/css/style.css
-const sourceFile = "https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/export_html/css/style.css";
+// https://github.com/telegramdesktop/tdesktop/blob/dev/Telegram/Resources/export_html/css/style.css
+const sourceFile = "https://github.com/telegramdesktop/tdesktop/raw/dev/Telegram/Resources/export_html/css/style.css";
 const themesFolder = join(__dirname, "themes");
 const outputFolder = join(__dirname, "..", "styles");
 
