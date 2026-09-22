@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 0.4.1 (2026-09-22)
+
+### Features
+
+* **generate:** use styles from the `dev` (default) branch ([df73403](https://github.com/VChet/telegram-export-dark/commit/df734039784dc0d88d32144b0287e15e9a4abbda))
+
 ## [0.4.0](https://github.com/VChet/telegram-export-dark/compare/v0.3.2...v0.4.0) (2025-09-21)
 
 
