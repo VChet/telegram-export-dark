@@ -12,10 +12,15 @@ const sourceFile = "https://github.com/telegramdesktop/tdesktop/raw/master/Teleg
 const themesFolder = join(__dirname, "themes");
 const outputFolder = join(__dirname, "..", "styles");
 
+function exit(error) {
+  if (error) console.error(error);
+  process.exit(error ? 1 : 0);
+}
+
 async function main() {
   const initialCss = await fetchCss([{ url: sourceFile }]);
   const themes = await readdir(themesFolder);
-  await Promise.all(themes.map(async(file) => {
+  await Promise.all(themes.map(async (file) => {
     const themeColors = await readFile(join(themesFolder, file), "utf8");
     const generatedCss = await remapCss(initialCss, mappings, { validate: true, keep: true });
     const output = themeColors + generatedCss;
@@ -27,9 +32,4 @@ async function main() {
   }));
 }
 
-main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+main().then(exit).catch(exit);
