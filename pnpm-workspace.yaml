@@ -1,8 +1,22 @@
 minimumReleaseAge: 0
-shellEmulator: true
+minimumReleaseAgeExcludePrune: true
+
 trustPolicy: no-downgrade
+trustPolicyExclude:
+  - "postcss-discard-duplicates@9.0.3"
+  - "postcss-discard-empty@9.0.3"
+  - "postcss-discard-overridden@9.0.3"
+  - "postcss-merge-longhand@9.0.4"
+  - "postcss-merge-rules@9.0.4"
+  - "postcss-unique-selectors@9.0.3"
+  - "stylehacks@9.0.4"
+  - "cssnano-utils@7.0.3"
+
+ignoreScripts: true
+shellEmulator: true
 pmOnFail: ignore
 packages: [.]
+
 overrides:
   isarray: "npm:@nolyfill/isarray@^1"
   safe-buffer: "npm:@nolyfill/safe-buffer@^1"
