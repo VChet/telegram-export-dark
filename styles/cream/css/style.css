@@ -779,13 +779,13 @@ only screen and (min-device-pixel-ratio: 2) {
   display: inline;
   padding: 2px 4px;
   font-size: 90%;
-  border-radius: 4px;
 }
 .default .rich_message .rich_code, .default .rich_message .rich_inline_code {
   max-width: 100%;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
   word-break: break-word;
+  border-radius: 4px;
 }
 .default .rich_message .rich_code {
   display: block;
@@ -794,7 +794,6 @@ only screen and (min-device-pixel-ratio: 2) {
   margin: 8px 0;
   padding: 6px;
   border-color: var(--gray-light);
-  border-radius: 4px;
   font-size: inherit;
   line-height: 1.42857143;
   overflow-x: auto;
