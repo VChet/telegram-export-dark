@@ -1021,7 +1021,8 @@ only screen and (min-device-pixel-ratio: 2) {
 .default .rich_message .rich_diff, .default .rich_message .rich_fallback,
 .default .rich_message .rich_inert_link,
 .default .rich_message .rich_inline_fallback,
-.default .rich_message .rich_reference, .default .rich_message .spoiler {
+.default .rich_message .rich_reference, .default .rich_message .rich_ton_address,
+.default .rich_message .spoiler {
   max-width: 100%;
   overflow-wrap: anywhere;
   word-break: break-word;
