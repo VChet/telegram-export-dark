@@ -18,18 +18,31 @@ function exit(error) {
 }
 
 async function main() {
-  const initialCss = await fetchCss([{ url: sourceFile }]);
-  const themes = await readdir(themesFolder);
-  await Promise.all(themes.map(async (file) => {
+  const sources = await fetchCss([{ url: sourceFile, strict: true }]);
+  if (!sources[0]?.css?.trim()) throw new Error("Upstream CSS is empty or unavailable");
+
+  const generatedCss = await remapCss(sources, mappings, { validate: true, keep: true });
+  if (!generatedCss?.trim()) throw new Error("Generated CSS is empty");
+
+  const themes = (await readdir(themesFolder)).filter((file) => file.endsWith(".css"));
+  if (!themes.length) throw new Error("No themes found");
+
+  const outputs = await Promise.all(themes.map(async (file) => {
     const themeColors = await readFile(join(themesFolder, file), "utf8");
-    const generatedCss = await remapCss(initialCss, mappings, { validate: true, keep: true });
-    const output = themeColors + generatedCss;
     const name = parse(file).name;
     const outputPath = join(outputFolder, name, "css", "style.css");
-
-    await mkdir(join(outputFolder, name, "css"), { recursive: true });
-    await writeFile(outputPath, output);
+    return {
+      outputPath,
+      content: `${themeColors.trimEnd()}\n${generatedCss}`
+    };
   }));
+
+  for (const { outputPath, content } of outputs) {
+    await mkdir(dirname(outputPath), { recursive: true });
+    await writeFile(outputPath, content);
+  }
+
+  console.info(`Generated ${outputs.length} theme stylesheets`);
 }
 
 main().then(exit).catch(exit);
