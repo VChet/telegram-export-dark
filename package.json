@@ -3,7 +3,10 @@
   "type": "module",
   "version": "0.4.3",
   "private": true,
-  "packageManager": "pnpm@12.11.2",
+  "packageManager": "pnpm@12.16.1",
+  "engines": {
+    "node": ">=24.22.2"
+  },
   "scripts": {
     "lint:js": "eslint .",
     "lint:js:fix": "npm run lint:js -- --fix",
@@ -11,10 +14,10 @@
     "release": "commit-and-tag-version --commit-all"
   },
   "devDependencies": {
-    "commit-and-tag-version": "^13.2.1",
-    "eslint": "^10.12.0",
+    "commit-and-tag-version": "^13.3.0",
+    "eslint": "^10.14.0",
     "fetch-css": "^5.0.2",
-    "neostandard": "0.14.0",
+    "neostandard": "0.14.1",
     "remap-css": "^9.0.2"
   }
 }
